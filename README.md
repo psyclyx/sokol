@@ -6,6 +6,8 @@
 
 # Sokol (dev fork)
 
+[![Build](/../../actions/workflows/main.yml/badge.svg)](/../../actions/workflows/main.yml) [![Bindings](/../../actions/workflows/gen_bindings.yml/badge.svg)](/../../actions/workflows/gen_bindings.yml) [![build](https://github.com/psyclyx/sokol-zig/actions/workflows/main.yml/badge.svg)](https://github.com/psyclyx/sokol-zig/actions/workflows/main.yml)
+
 This is my personal fork of [Sokol](https://github.com/floooh/sokol), to solve my own problems.
 
 ## Changes
