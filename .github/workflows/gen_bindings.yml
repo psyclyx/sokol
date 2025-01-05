@@ -332,6 +332,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: psyclyx/sokol-zig
+          ref: ${{ github.ref_name }}
           ssh-key: ${{ secrets.GHACTIONS_ZIG_PUSH }}
       - uses: actions/download-artifact@v4
         with:
@@ -343,7 +344,7 @@ jobs:
           git config user.name "GH Action"
           git add -A
           git diff-index --quiet HEAD || git commit -m "updated (https://github.com/psyclyx/sokol/commit/${{ github.sha }})"
-          git push ${{ github.ref_name }}
+          git push
 
 #   deploy-nim:
 #     needs: test-nim
