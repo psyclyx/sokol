@@ -12,23 +12,23 @@ tasks = [
     [ '../util/sokol_shape.h',     'sshape_',   ['sg_'] ],
 ]
 
-# Jai
-gen_jai.prepare()
-for task in tasks:
-    [c_header_path, main_prefix, dep_prefixes] = task
-    gen_jai.gen(c_header_path, main_prefix, dep_prefixes)
+# # Jai
+# gen_jai.prepare()
+# for task in tasks:
+#     [c_header_path, main_prefix, dep_prefixes] = task
+#     gen_jai.gen(c_header_path, main_prefix, dep_prefixes)
 
-# Odin
-gen_odin.prepare()
-for task in tasks:
-    [c_header_path, main_prefix, dep_prefixes] = task
-    gen_odin.gen(c_header_path, main_prefix, dep_prefixes)
+# # Odin
+# gen_odin.prepare()
+# for task in tasks:
+#     [c_header_path, main_prefix, dep_prefixes] = task
+#     gen_odin.gen(c_header_path, main_prefix, dep_prefixes)
 
-# Nim
-gen_nim.prepare()
-for task in tasks:
-    [c_header_path, main_prefix, dep_prefixes] = task
-    gen_nim.gen(c_header_path, main_prefix, dep_prefixes)
+# # Nim
+# gen_nim.prepare()
+# for task in tasks:
+#     [c_header_path, main_prefix, dep_prefixes] = task
+#     gen_nim.gen(c_header_path, main_prefix, dep_prefixes)
 
 # Zig
 zig_tasks = [
@@ -41,18 +41,18 @@ for task in zig_tasks:
     [c_header_path, main_prefix, dep_prefixes] = task
     gen_zig.gen(c_header_path, main_prefix, dep_prefixes)
 
-# D
-d_tasks = [
-    *tasks,
-    [ '../util/sokol_imgui.h', 'simgui_',   ['sg_', 'sapp_'] ],
-]
-gen_d.prepare()
-for task in d_tasks:
-    [c_header_path, main_prefix, dep_prefixes] = task
-    gen_d.gen(c_header_path, main_prefix, dep_prefixes)
+# # D
+# d_tasks = [
+#     *tasks,
+#     [ '../util/sokol_imgui.h', 'simgui_',   ['sg_', 'sapp_'] ],
+# ]
+# gen_d.prepare()
+# for task in d_tasks:
+#     [c_header_path, main_prefix, dep_prefixes] = task
+#     gen_d.gen(c_header_path, main_prefix, dep_prefixes)
 
-# Rust
-gen_rust.prepare()
-for task in tasks:
-    [c_header_path, main_prefix, dep_prefixes] = task
-    gen_rust.gen(c_header_path, main_prefix, dep_prefixes)
+# # Rust
+# gen_rust.prepare()
+# for task in tasks:
+#     [c_header_path, main_prefix, dep_prefixes] = task
+#     gen_rust.gen(c_header_path, main_prefix, dep_prefixes)
