@@ -1,0 +1,8 @@
+version: "1"
+rules:
+  - base: upstream-master
+    upstream: floooh:master
+    mergeMethod: hardreset
+  - base: main
+    upstream: upstream-master
+    mergeMethod: merge
